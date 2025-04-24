@@ -15,5 +15,8 @@ RUN npm install
 # add app
 COPY . ./
 
+# expose internal port used by the app
+Expose 8080
+
 # start app
 CMD ["npm", "start"]
