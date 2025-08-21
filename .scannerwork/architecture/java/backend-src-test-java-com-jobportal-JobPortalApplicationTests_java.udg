@@ -1,0 +1,115 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755721214982*java2.Bª
+G
+Bbackend/src/test/java/com/jobportal/JobPortalApplicationTests.java2
+	
+type3
+	
+TEST4
+
+
+module-key5
+
+backend6
+
+package8
+
+backend:com.jobportal9
+-
+'com.jobportal.JobPortalApplicationTests11
+
+class12
+
+access13
+
+	protected14
+
+simple-name15
+
+JobPortalApplicationTests16
+
+SpringBootTest18
+
+unknown19
+
+annotated by20
+,
+&Recovered#typeBindingLSpringBootTest;022
+
+
+uses23
+=
+7com.jobportal.JobPortalApplicationTests#contextLoads()V25
+
+method26
+
+contextLoads27
+
+
+Test29
+"
+Recovered#typeBindingLTest;031J#
+!
+1
+12
+
+3
+4
+
+5
+6Z
+
+7
+7982
+
+
+5
+6j‘
+
+17
+171819
+
+21
+212219
+
+28
+282919
+B
+24<
+242526 *
+1	 	(210:7B
+
+
+13
+14
+
+
+15
+27
+
+30
+303119
+>
+108
+101112 *
+1 ( :7B
+
+
+13
+14
+
+
+15
+16rl
+
+101720*
+1 (
+
+102123*
+1 (
+
+242820*
+1	 	(
+
+243023*
+1	 	(
