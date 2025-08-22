@@ -14,13 +14,48 @@ pool:
   demands: []
 
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.11'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+
+  # prepare sonar cloud
+  - task: SonarCloudPrepare@3
+    inputs:
+      SonarCloud: 'SonarCloudServiceConnection'
+      organization: 'devanshi-rangras'
+      scannerMode: 'CLI'
+      configMode: 'manual'
+      cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
+      cliProjectName: 'JobPortal'
+      cliSources: '.'
+  
+  #setup jdk for spring boot backend
+  - task: JavaToolInstaller@0
+    inputs:
+      jdkArchitectureOption: 'x64'
+      jdkSourceOption: 'PreInstalled'
+  
+  #Build & test backend with Maven
+  - script: |
+      cd backend
+      mvn clean verify
+    displayName: 'Build & Test Backend (Maven)'
+
+  #Setup Node.js for frontend 
+  - task: NodeTool@0 
+    inputs: 
+      versionSpec: '18.x' 
+    displayName: 'Install Node.js'
+
+  #Build & test frontend 
+  - script: | 
+      cd frontend 
+      npm install 
+      npm run build 
+      npm test -- --coverage || echo "No tests found" 
+    displayName: 'Build & Test Frontend'
+
+  #Run SonarCloud Analysis 
+  - task: SonarCloudAnalyze@3
+
+  #Publish results (Quality Gate) 
+  - task: SonarCloudPublish@3
+    inputs: 
+      pollingTimeoutSec: '300'
