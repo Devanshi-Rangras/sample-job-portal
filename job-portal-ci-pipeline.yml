@@ -27,12 +27,13 @@ steps:
       cliSources: '.'
   
   #setup jdk for spring boot backend
-  - task: JavaToolInstaller@0
-    inputs:
-      versionSpec: '21'
-      jdkArchitectureOption: 'x64'
-      jdkSourceOption: 'LocalDirectory'
-      jdkFile: 'C:\Program Files\Eclipse Adoptium\jdk-21.0.8.9-hotspot\bin'
+  - powershell: |
+      Invoke-WebRequest -Uri "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_windows_hotspot_21.0.2_13.zip" -OutFile "C:\agent\_work\jdk.zip"
+      Expand-Archive "C:\agent\_work\jdk.zip" -DestinationPath "C:\agent\_work\jdk"
+      echo "##vso[task.setvariable variable=JAVA_HOME]C:\agent\_work\jdk\jdk-21.0.2+13"
+      echo "##vso[task.prependpath]C:\agent\_work\jdk\jdk-21.0.2+13\bin"
+      java -version
+    displayName: "Download & Setup JDK 21"
   
   #Build & test backend with Maven
   - script: |
