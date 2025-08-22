@@ -29,6 +29,7 @@ steps:
   #setup jdk for spring boot backend
   - task: JavaToolInstaller@0
     inputs:
+      versionSpec: '21'
       jdkArchitectureOption: 'x64'
       jdkSourceOption: 'PreInstalled'
   
