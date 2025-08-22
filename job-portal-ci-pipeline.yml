@@ -31,7 +31,8 @@ steps:
     inputs:
       versionSpec: '21'
       jdkArchitectureOption: 'x64'
-      jdkSourceOption: 'PreInstalled'
+      jdkSourceOption: 'LocalDirectory'
+      jdkFile: 'C:\Program Files\Eclipse Adoptium\jdk-21.0.8.9-hotspot\bin'
   
   #Build & test backend with Maven
   - script: |
