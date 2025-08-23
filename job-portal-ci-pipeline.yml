@@ -39,7 +39,7 @@ steps:
   # Prepare SonarCloud Analysis (CLI mode, before build)
   - task: SonarCloudPrepare@3
     inputs:
-      SonarCloud: 'SonarCloudServiceConnection'   # <-- Service connection to your SonarQube/SonarCloud
+      SonarCloud: 'SonarCloudServiceConnection'   # <-- Service connection to your SonarCloud
       organization: 'devanshi-rangras'
       scannerMode: 'CLI'
       configMode: 'manual'
@@ -47,16 +47,6 @@ steps:
       cliProjectName: 'JobPortal'
       cliSources: 'backend,frontend'
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
-
-  # Run SonarCloud Analysis
-  - task: SonarCloudAnalyze@3
-    displayName: "Run SonarCloud Analysis (Pre-Build)"
-
-  # Publish SonarCloud Quality Gate
-  - task: SonarCloudPublish@3
-    inputs:
-      pollingTimeoutSec: '300'
-    displayName: "Publish SonarCloud Quality Gate (Pre-Build)"
   
   # Setup Apache Maven
   - powershell: |
@@ -94,3 +84,13 @@ steps:
       npm run build
       npm test
     displayName: "Build & Test Frontend"
+  
+  # Run SonarCloud Analysis
+  - task: SonarCloudAnalyze@3
+    displayName: "Run SonarCloud Analysis (Pre-Build)"
+  
+  # Publish SonarCloud Quality Gate
+  - task: SonarCloudPublish@3
+    inputs:
+      pollingTimeoutSec: '300'
+    displayName: "Publish SonarCloud Quality Gate (Pre-Build)"
