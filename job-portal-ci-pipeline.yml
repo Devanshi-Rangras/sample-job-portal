@@ -57,10 +57,20 @@ steps:
   
   # Setup Apache Maven
   - powershell: |
-      Invoke-WebRequest -Uri "https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip" -OutFile "$(Pipeline.Workspace)\maven.zip"
-      Expand-Archive "$(Pipeline.Workspace)\maven.zip" -DestinationPath "$(Pipeline.Workspace)\maven"
-      echo "##vso[task.setvariable variable=M2_HOME]$(Pipeline.Workspace)\maven\apache-maven-3.9.9"
-      echo "##vso[task.prependpath]$(Pipeline.Workspace)\maven\apache-maven-3.9.9\bin"
+      $mavenFolder = "$(Pipeline.Workspace)\maven"
+      $mavenZip = "$(Pipeline.Workspace)\maven.zip"
+
+      if (-Not (Test-Path $mavenFolder)) {
+        Write-Host "Maven not found, downloading..."
+        Invoke-WebRequest -Uri "https://archive.apache.org/dist/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip" -OutFile $mavenZip
+        Expand-Archive $mavenZip -DestinationPath $mavenFolder -Force
+      } else {
+        Write-Host "Maven already exists, skipping download & extraction."
+      }
+
+      $mavenPath = Get-ChildItem $mavenFolder | Select-Object -First 1 -ExpandProperty FullName
+      echo "##vso[task.setvariable variable=MAVEN_HOME]$mavenPath"
+      echo "##vso[task.prependpath]$mavenPath\bin"
       mvn -version
     displayName: "Download & Setup Apache Maven"
 
