@@ -42,7 +42,7 @@ steps:
       configMode: 'manual'
       cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
       cliProjectName: 'JobPortal'
-      cliSources: '.'
+      cliSources: 'backend,frontend'
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
 
   # Run SonarCloud Analysis
