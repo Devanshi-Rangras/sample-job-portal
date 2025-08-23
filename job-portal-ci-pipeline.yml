@@ -44,6 +44,15 @@ steps:
     inputs:
       pollingTimeoutSec: '300'
     displayName: "Publish SonarCloud Quality Gate (Pre-Build)"
+  
+  # Setup Apache Maven
+  - powershell: |
+      Invoke-WebRequest -Uri "https://dlcdn.apache.org/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip" -OutFile "$(Pipeline.Workspace)\maven.zip"
+      Expand-Archive "$(Pipeline.Workspace)\maven.zip" -DestinationPath "$(Pipeline.Workspace)\maven"
+      echo "##vso[task.setvariable variable=M2_HOME]$(Pipeline.Workspace)\maven\apache-maven-3.9.9"
+      echo "##vso[task.prependpath]$(Pipeline.Workspace)\maven\apache-maven-3.9.9\bin"
+      mvn -version
+    displayName: "Download & Setup Apache Maven"
 
   # Build & Test Backend with Maven
   - script: |
@@ -51,11 +60,10 @@ steps:
       mvn clean verify
     displayName: "Build & Test Backend (Maven)"
 
-# Build & Test Frontend (npm)
-
-# - script: |
-#     cd frontend
-#     npm install
-#     npm run build
-#     npm test
-#   displayName: "Build & Test Frontend"
+  # Build & Test Frontend (npm)
+  - script: |
+      cd frontend
+      npm install
+      npm run build
+      npm test
+    displayName: "Build & Test Frontend"
