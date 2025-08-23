@@ -16,10 +16,20 @@ pool:
 steps:
   # Setup JDK 21 dynamically
   - powershell: |
-      Invoke-WebRequest -Uri "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_x64_windows_hotspot_21.0.2_13.zip" -OutFile "$(Pipeline.Workspace)\jdk.zip"
-      Expand-Archive "$(Pipeline.Workspace)\jdk.zip" -DestinationPath "$(Pipeline.Workspace)\jdk"
-      echo "##vso[task.setvariable variable=JAVA_HOME]$(Pipeline.Workspace)\jdk\jdk-21.0.2+13"
-      echo "##vso[task.prependpath]$(Pipeline.Workspace)\jdk\jdk-21.0.2+13\bin"
+      $jdkFolder = "$(Pipeline.Workspace)\jdk"
+      $jdkZip = "$(Pipeline.Workspace)\jdk.zip"
+
+      if (-Not (Test-Path $jdkFolder)) {
+        Write-Host "JDK not found, downloading..."
+        Invoke-WebRequest -Uri "https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip" -OutFile $jdkZip
+        Expand-Archive $jdkZip -DestinationPath $jdkFolder -Force
+      } else {
+        Write-Host "JDK already exists, skipping download & extraction."
+      }
+
+      $jdkPath = Get-ChildItem $jdkFolder | Select-Object -First 1 -ExpandProperty FullName
+      echo "##vso[task.setvariable variable=JAVA_HOME]$jdkPath"
+      echo "##vso[task.prependpath]$jdkPath\bin"
       java -version
     displayName: "Download & Setup JDK 21"
 
