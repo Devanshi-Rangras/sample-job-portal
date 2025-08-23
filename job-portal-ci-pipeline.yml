@@ -71,8 +71,12 @@ steps:
       $mavenPath = Get-ChildItem $mavenFolder | Select-Object -First 1 -ExpandProperty FullName
       echo "##vso[task.setvariable variable=MAVEN_HOME]$mavenPath"
       echo "##vso[task.prependpath]$mavenPath\bin"
-      mvn -version
     displayName: "Download & Setup Apache Maven"
+  
+  # Verify Maven
+  - powershell: |
+      mvn -version
+    displayName: "Verify Maven Installation"
 
   # Build & Test Backend with Maven
   - script: |
