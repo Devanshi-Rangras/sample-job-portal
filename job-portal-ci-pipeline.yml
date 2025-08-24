@@ -54,7 +54,6 @@ steps:
 
         # Exclude node_modules and build outputs
         sonar.exclusions=**/node_modules/**,**/dist/**,**/build/**
-        sonar.test.exclusions=**/*.test.js,**/*.spec.js
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
   
   # Setup Apache Maven
