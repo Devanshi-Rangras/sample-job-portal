@@ -1,0 +1,152 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708023*java2.BÃ
+?
+:backend/src/main/java/com/jobportal/utility/ErrorInfo.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.utility7
+$
+com.jobportal.utility.ErrorInfo9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+	ErrorInfo14
+ 
+com.jobportal.utility.Data16
+
+unknown17
+
+annotated by18
+
+
+uses19
+
+NoArgsConstructor21
+/
+)Recovered#typeBindingLNoArgsConstructor;023
+
+AllArgsConstructor25
+0
+*Recovered#typeBindingLAllArgsConstructor;027
+2
+,com.jobportal.utility.ErrorInfo.errorMessage29
+
+field30
+
+private31
+
+errorMessage32
+/
+)com.jobportal.utility.ErrorInfo.errorCode34
+
+	errorCode35
+/
+)com.jobportal.utility.ErrorInfo.timeStamp37
+
+	timeStamp38J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jê
+
+20
+202117
+A
+28;
+282930 *
+1 (	28:5B
+
+
+11
+31
+
+
+13
+32
+
+15
+151617
+
+24
+242517
+A
+33;
+333430 *
+1 (	28:5B
+
+
+11
+31
+
+
+13
+35
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+
+26
+262717
+
+22
+222317
+A
+36;
+363730 *
+1 (	28:5B
+
+
+11
+31
+
+
+13
+38rœ
+
+81518*
+1	 	(
+
+81519*
+1	 	(
+
+82018*
+1
+ 
+(
+
+82219*
+1
+ 
+(
+
+82418*
+1 (
+
+82619*
+1 (

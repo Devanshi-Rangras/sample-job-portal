@@ -1,0 +1,194 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708951*java2.B»
+D
+?backend/src/main/java/com/jobportal/service/ProfileService.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.service7
+)
+$com.jobportal.service.ProfileService9
+
+	interface10
+
+access11
+
+public12
+
+simple-name13
+
+ProfileService14
+e
+_com.jobportal.service.ProfileService#createProfile(Lcom/jobportal/dto/UserDTO;)Ljava/lang/Long;16
+
+method17
+
+createProfile18
+
+com.jobportal.dto.UserDTO20
+
+unknown21
+
+	has param22
+
+is type23
+
+
+uses24
+0
+*com.jobportal.exception.JobPortalException26
+e
+_com.jobportal.service.ProfileService#getProfile(Ljava/lang/Long;)Lcom/jobportal/dto/ProfileDTO;28
+
+
+getProfile29
+"
+com.jobportal.dto.ProfileDTO31
+
+returns32
+v
+pcom.jobportal.service.ProfileService#updateProfile(Lcom/jobportal/dto/ProfileDTO;)Lcom/jobportal/dto/ProfileDTO;34
+
+updateProfile35
+K
+Ecom.jobportal.service.ProfileService#getAllProfiles()Ljava/util/List;37
+
+getAllProfiles38J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576j…
+
+19
+192021
+
+25
+252621
+A
+33;
+333417 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+35
+A
+27;
+272817 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+29
+A
+36;
+363717 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+38
+;
+86
+8910 *
+1	 	( :5B
+
+
+11
+12
+
+
+13
+14
+A
+15;
+151617 *
+1
+ 
+(28:5B
+
+
+11
+12
+
+
+13
+18
+
+30
+303121r•
+
+151922*
+1
+ 
+(#
+
+151923*
+1
+$ 
+(+
+
+151924*
+1
+ 
+(#
+
+152524*
+1
+4 
+(F
+
+273032*
+1	 (
+
+273024*
+1	 (
+
+272524*
+1/ (A
+
+333032*
+1	 (
+
+333022*
+1" (,
+
+333024*
+1	 (
+
+333023*
+1- (7
+
+333024*
+1" (,
+
+332524*
+1@ (R
+
+363024*
+1 (
+
+362524*
+12 (D

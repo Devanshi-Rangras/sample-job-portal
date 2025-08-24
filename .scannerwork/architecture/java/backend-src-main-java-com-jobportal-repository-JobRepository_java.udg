@@ -1,0 +1,150 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708100*java2.Bç
+F
+Abackend/src/main/java/com/jobportal/repository/JobRepository.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.repository7
++
+&com.jobportal.repository.JobRepository9
+
+	interface10
+
+access11
+
+public12
+
+simple-name13
+
+JobRepository14
+-
+'Recovered#typeBindingLMongoRepository;016
+
+unknown17
+
+
+implements18
+
+
+uses19
+
+com.jobportal.entity.Job21
+š
+“com.jobportal.repository.JobRepository#findByApplicantIdAndApplicationStatus(Ljava/lang/Long;Lcom/jobportal/dto/ApplicationStatus;)Ljava/util/List;23
+
+method24
++
+%findByApplicantIdAndApplicationStatus25
+)
+#com.jobportal.dto.ApplicationStatus27
+
+	has param28
+
+Query30
+
+annotated by31
+#
+Recovered#typeBindingLQuery;033
+
+is type34
+]
+Wcom.jobportal.repository.JobRepository#findByPostedBy(Ljava/lang/Long;)Ljava/util/List;36
+
+findByPostedBy37J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576j§
+
+29
+293017
+
+20
+202117
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+
+26
+262717
+A
+22;
+222324 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+25
+
+32
+323317
+A
+35;
+353624 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+37
+
+15
+151617r‹
+
+81518*
+1( (7
+
+81519*
+1( (7
+
+82019*
+18 (;
+
+222628*
+1G (X
+
+222931*
+1 (
+
+223219*
+1 (	
+
+222019*
+1
+ (
+
+222634*
+1Y (j
+
+222619*
+1G (X
+
+352019*
+1 (

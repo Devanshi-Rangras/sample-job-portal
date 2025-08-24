@@ -1,0 +1,141 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708049*java2.B³
+=
+8backend/src/main/java/com/jobportal/entity/Sequence.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.entity7
+"
+com.jobportal.entity.Sequence9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+Sequence14
+
+Document16
+
+unknown17
+
+annotated by18
+&
+ Recovered#typeBindingLDocument;020
+
+
+uses21
+
+
+Data23
+"
+Recovered#typeBindingLData;025
+&
+ com.jobportal.entity.Sequence.id27
+
+field28
+
+private29
+
+id30
+
+Id32
+ 
+Recovered#typeBindingLId;034
+'
+!com.jobportal.entity.Sequence.seq36
+	
+seq37J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576j»
+;
+86
+8910 *
+1
+ 
+(:5B
+
+
+11
+12
+
+
+13
+14
+A
+26;
+262728 *
+1 (28:5B
+
+
+11
+29
+
+
+13
+30
+A
+35;
+353628 *
+1 (	28:5B
+
+
+11
+29
+
+
+13
+37
+
+22
+222317
+
+31
+313217
+
+15
+151617
+
+24
+242517
+
+19
+192017
+
+33
+333417rž
+
+81518*
+1 (
+
+81921*
+1 (
+
+
+82218*
+1	 	(
+
+82421*
+1	 	(
+
+263118*
+1 (
+
+263321*
+1 (

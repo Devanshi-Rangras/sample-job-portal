@@ -1,0 +1,255 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708776*java2.BÔ
+<
+7backend/src/main/java/com/jobportal/SecurityConfig.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal7
+!
+com.jobportal.SecurityConfig9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+SecurityConfig14
+
+Configuration16
+
+unknown17
+
+annotated by18
++
+%Recovered#typeBindingLConfiguration;020
+
+
+uses21
+
+EnableWebSecurity23
+/
+)Recovered#typeBindingLEnableWebSecurity;025
+(
+"com.jobportal.SecurityConfig.point27
+
+field28
+
+private29
+
+point30
+3
+-com.jobportal.jwt.JwtAuthenticationEntryPoint32
+
+is type33
+
+	Autowired35
+'
+!Recovered#typeBindingLAutowired;037
+)
+#com.jobportal.SecurityConfig.filter39
+
+filter40
+/
+)com.jobportal.jwt.JwtAuthenticationFilter42
+[
+Ucom.jobportal.SecurityConfig#securityFilterChain(LHttpSecurity;)LSecurityFilterChain;44
+
+method45
+
+securityFilterChain46
+
+SecurityFilterChain48
+
+returns49
+*
+$Recovered#typeBindingLHttpSecurity;051
+
+	has param52
+
+
+Bean54
+"
+Recovered#typeBindingLBean;056
+
+
+references57
+B
+<Recovered#typeBindingLUsernamePasswordAuthenticationFilter;059J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jŠ
+
+24
+242517
+
+15
+151617
+
+58
+585917
+
+53
+535417
+
+47
+474817
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+
+34
+343517
+
+55
+555617
+
+41
+414217
+
+31
+313217
+
+19
+192017
+
+36
+363717
+A
+38;
+383928 *
+1 (28:5B
+
+
+11
+29
+
+
+13
+40
+A
+43;
+434445 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+46
+
+50
+505117
+
+22
+222317
+A
+26;
+262728 *
+1 (28:5B
+
+
+11
+29
+
+
+13
+30r„
+
+81518*
+1 (
+
+81921*
+1 (
+
+82218*
+1 (
+
+82421*
+1 (
+
+263133*
+1 ((
+
+263418*
+1 (
+
+263621*
+1 (
+
+263121*
+1 ((
+
+263121*
+1) (.
+
+384133*
+1 ($
+
+383418*
+1 (
+
+383621*
+1 (
+
+384121*
+1 ($
+
+384121*
+1% (+
+
+434749*
+1 (
+
+435052*
+14 (@
+
+435318*
+1 (
+
+435521*
+1 (
+
+
+434721*
+1 (
+
+435033*
+1A (E
+
+435021*
+14 (@
+
+434121*
+1% %($
+
+433857*
+1% %($
+
+435821*
+1%& %(J

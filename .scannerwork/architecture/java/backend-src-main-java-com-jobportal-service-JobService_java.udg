@@ -1,0 +1,275 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853709465*java2.B²
+
+@
+;backend/src/main/java/com/jobportal/service/JobService.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.service7
+%
+ com.jobportal.service.JobService9
+
+	interface10
+
+access11
+
+public12
+
+simple-name13
+
+
+JobService14
+d
+^com.jobportal.service.JobService#postJob(Lcom/jobportal/dto/JobDTO;)Lcom/jobportal/dto/JobDTO;16
+
+method17
+
+postJob18
+
+com.jobportal.dto.JobDTO20
+
+unknown21
+
+returns22
+
+	has param23
+
+
+uses24
+
+is type25
+0
+*com.jobportal.exception.JobPortalException27
+C
+=com.jobportal.service.JobService#getAllJobs()Ljava/util/List;29
+
+
+getAllJobs30
+Y
+Scom.jobportal.service.JobService#getJob(Ljava/lang/Long;)Lcom/jobportal/dto/JobDTO;32
+
+getJob33
+b
+\com.jobportal.service.JobService#applyJob(Ljava/lang/Long;Lcom/jobportal/dto/ApplicantDTO;)V35
+
+applyJob36
+$
+com.jobportal.dto.ApplicantDTO38
+x
+rcom.jobportal.service.JobService#getHistory(Ljava/lang/Long;Lcom/jobportal/dto/ApplicationStatus;)Ljava/util/List;40
+
+
+getHistory41
+)
+#com.jobportal.dto.ApplicationStatus43
+X
+Rcom.jobportal.service.JobService#getJobsPostedBy(Ljava/lang/Long;)Ljava/util/List;45
+
+getJobsPostedBy46
+X
+Rcom.jobportal.service.JobService#changeAppStatus(Lcom/jobportal/dto/Application;)V48
+
+changeAppStatus49
+#
+com.jobportal.dto.Application51J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jö
+A
+39;
+394017 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+41
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+A
+28;
+282917 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+30
+
+37
+373821
+
+42
+424321
+A
+44;
+444517 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+46
+A
+47;
+474817 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+49
+
+50
+505121
+A
+34;
+343517 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+36
+A
+31;
+313217 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+33
+
+26
+262721
+A
+15;
+151617 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+18
+
+19
+192021r£
+
+151922*
+1	 (
+
+151923*
+1 (
+
+151924*
+1	 (
+
+151925*
+1 (%
+
+151924*
+1 (
+
+152624*
+1. (@
+
+281924*
+1 (
+
+282624*
+1* (<
+
+311922*
+1	 (
+
+311924*
+1	 (
+
+312624*
+1' (9
+
+343723*
+1  (,
+
+343725*
+1- (9
+
+343724*
+1  (,
+
+342624*
+1B (T
+
+394223*
+1* (;
+
+391924*
+1 (
+
+394225*
+1< (M
+
+394224*
+1* (;
+
+441924*
+1 (
+
+442624*
+16 (H
+
+475023*
+1 ()
+
+475025*
+1* (5
+
+475024*
+1 ()
+
+472624*
+1> (P

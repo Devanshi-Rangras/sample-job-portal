@@ -1,0 +1,336 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853709511*java2.Bµ	
+A
+<backend/src/main/java/com/jobportal/dto/NotificationDTO.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.dto7
+&
+!com.jobportal.dto.NotificationDTO9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+NotificationDTO14
+
+
+Data16
+
+unknown17
+
+annotated by18
+"
+Recovered#typeBindingLData;020
+
+
+uses21
+
+NoArgsConstructor23
+/
+)Recovered#typeBindingLNoArgsConstructor;025
+
+AllArgsConstructor27
+0
+*Recovered#typeBindingLAllArgsConstructor;029
+*
+$com.jobportal.dto.NotificationDTO.id31
+
+field32
+
+private33
+
+id34
+.
+(com.jobportal.dto.NotificationDTO.userId36
+
+userId37
+/
+)com.jobportal.dto.NotificationDTO.message39
+
+message40
+.
+(com.jobportal.dto.NotificationDTO.action42
+
+action43
+-
+'com.jobportal.dto.NotificationDTO.route45
+
+route46
+.
+(com.jobportal.dto.NotificationDTO.status48
+
+status49
+*
+$com.jobportal.dto.NotificationStatus51
+
+is type52
+1
++com.jobportal.dto.NotificationDTO.timestamp54
+
+	timestamp55
+U
+Ocom.jobportal.dto.NotificationDTO#toEntity()Lcom/jobportal/entity/Notification;57
+
+method58
+
+toEntity59
+'
+!com.jobportal.entity.Notification61
+
+returns62
+
+
+references63J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jõ
+
+22
+222317
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+A
+30;
+303132 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+34
+
+50
+505117
+
+26
+262717
+A
+53;
+535432 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+55
+A
+35;
+353632 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+37
+
+15
+151617
+A
+47;
+474832 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+49
+
+28
+282917
+
+19
+192017
+
+24
+242517
+A
+56;
+565758 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+59
+A
+38;
+383932 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+40
+A
+41;
+414232 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+43
+A
+44;
+444532 *
+1 (	28:5B
+
+
+11
+33
+
+
+13
+46
+
+60
+606117rç
+
+81518*
+1 (
+
+81921*
+1 (
+
+82218*
+1 (
+
+82421*
+1 (
+
+82618*
+1 (
+
+82821*
+1 (
+
+475052*
+1
+ (
+
+475021*
+1
+ (
+
+475021*
+1 (#
+
+566062*
+1	 (
+
+566021*
+1	 (
+
+56821*
+1 ( 
+
+56863*
+1 ( 
+
+563063*
+1! (#
+
+56821*
+1% ()
+
+56863*
+1% ()
+
+563563*
+1* (0
+
+56821*
+12 (6
+
+56863*
+12 (6
+
+563863*
+17 (>
+
+56821*
+1@ (D
+
+56863*
+1@ (D
+
+564163*
+1E (K
+
+56821*
+1M (Q
+
+56863*
+1M (Q
+
+564463*
+1R (W
+
+56821*
+1Y (]
+
+56863*
+1Y (]
+
+565021*
+1^ (d
+
+564763*
+1^ (d
+
+56821*
+1f (j
+
+56863*
+1f (j
+
+565363*
+1k (t

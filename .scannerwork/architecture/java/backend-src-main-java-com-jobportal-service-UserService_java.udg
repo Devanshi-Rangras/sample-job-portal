@@ -1,0 +1,241 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708073*java2.BÛ	
+A
+<backend/src/main/java/com/jobportal/service/UserService.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.service7
+&
+!com.jobportal.service.UserService9
+
+	interface10
+
+access11
+
+public12
+
+simple-name13
+
+UserService14
+l
+fcom.jobportal.service.UserService#registerUser(Lcom/jobportal/dto/UserDTO;)Lcom/jobportal/dto/UserDTO;16
+
+method17
+
+registerUser18
+
+com.jobportal.dto.UserDTO20
+
+unknown21
+
+returns22
+
+	has param23
+
+
+uses24
+
+is type25
+0
+*com.jobportal.exception.JobPortalException27
+e
+_com.jobportal.service.UserService#getUserByEmail(Ljava/lang/String;)Lcom/jobportal/dto/UserDTO;29
+
+getUserByEmail30
+j
+dcom.jobportal.service.UserService#loginUser(Lcom/jobportal/dto/LoginDTO;)Lcom/jobportal/dto/UserDTO;32
+
+	loginUser33
+ 
+com.jobportal.dto.LoginDTO35
+V
+Pcom.jobportal.service.UserService#sendOTP(Ljava/lang/String;)Ljava/lang/Boolean;37
+
+sendOTP38
+j
+dcom.jobportal.service.UserService#verifyOtp(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;40
+
+	verifyOtp41
+s
+mcom.jobportal.service.UserService#changePassword(Lcom/jobportal/dto/LoginDTO;)Lcom/jobportal/dto/ResponseDTO;43
+
+changePassword44
+#
+com.jobportal.dto.ResponseDTO46J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jŸ
+A
+31;
+313217 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+33
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+
+34
+343521
+A
+42;
+424317 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+44
+
+45
+454621
+A
+15;
+151617 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+18
+
+19
+192021
+
+26
+262721
+A
+39;
+394017 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+41
+A
+28;
+282917 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+30
+A
+36;
+363717 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+38rÒ
+
+151922*
+1	 (
+
+151923*
+1 (%
+
+151924*
+1	 (
+
+151925*
+1& (-
+
+151924*
+1 (%
+
+152624*
+16 (H
+
+281922*
+1	 (
+
+281924*
+1	 (
+
+282624*
+14 (F
+
+311922*
+1	 (
+
+313423*
+1 (#
+
+311924*
+1	 (
+
+313425*
+1$ (,
+
+313424*
+1 (#
+
+312624*
+15 (G
+
+392624*
+1= (O
+
+424522*
+1	 (
+
+423423*
+1% (-
+
+424524*
+1	 (
+
+423425*
+1. (6
+
+423424*
+1% (-
+
+422624*
+1? (Q

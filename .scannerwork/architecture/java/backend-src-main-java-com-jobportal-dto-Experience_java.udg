@@ -1,0 +1,223 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708269*java2.B£
+<
+7backend/src/main/java/com/jobportal/dto/Experience.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.dto7
+!
+com.jobportal.dto.Experience9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+
+Experience14
+
+
+Data16
+
+unknown17
+
+annotated by18
+"
+Recovered#typeBindingLData;020
+
+
+uses21
+
+NoArgsConstructor23
+/
+)Recovered#typeBindingLNoArgsConstructor;025
+
+AllArgsConstructor27
+0
+*Recovered#typeBindingLAllArgsConstructor;029
+(
+"com.jobportal.dto.Experience.title31
+
+field32
+
+private33
+
+title34
+*
+$com.jobportal.dto.Experience.company36
+
+company37
++
+%com.jobportal.dto.Experience.location39
+
+location40
+,
+&com.jobportal.dto.Experience.startDate42
+
+	startDate43
+*
+$com.jobportal.dto.Experience.endDate45
+
+endDate46
+*
+$com.jobportal.dto.Experience.working48
+
+working49
+.
+(com.jobportal.dto.Experience.description51
+
+description52J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jŠ
+
+22
+222317
+A
+47;
+474832 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+49
+A
+30;
+303132 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+34
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+
+26
+262717
+A
+50;
+505132 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+52
+A
+38;
+383932 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+40
+A
+41;
+414232 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+43
+
+15
+151617
+
+28
+282917
+
+19
+192017
+
+24
+242517
+A
+44;
+444532 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+46
+A
+35;
+353632 *
+1 (28:5B
+
+
+11
+33
+
+
+13
+37rœ
+
+81518*
+1	 	(
+
+81921*
+1	 	(
+
+82218*
+1
+ 
+(
+
+82421*
+1
+ 
+(
+
+82618*
+1 (
+
+82821*
+1 (

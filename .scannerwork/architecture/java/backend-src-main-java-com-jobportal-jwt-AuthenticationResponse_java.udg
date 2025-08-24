@@ -1,0 +1,123 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853707719*java2.B¬
+H
+Cbackend/src/main/java/com/jobportal/jwt/AuthenticationResponse.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.jwt7
+-
+(com.jobportal.jwt.AuthenticationResponse9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+AuthenticationResponse14
+
+
+Data16
+
+unknown17
+
+annotated by18
+"
+Recovered#typeBindingLData;020
+
+
+uses21
+J
+Dcom.jobportal.jwt.AuthenticationResponse#<init>(Ljava/lang/String;)V23
+
+method24
+
+calls25
+
+
+references26
+2
+,com.jobportal.jwt.AuthenticationResponse.jwt28
+
+field29
+
+private30
+	
+jwt31J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jÎ
+;
+86
+8910 *
+1 ($:5B
+
+
+11
+12
+
+
+13
+14
+A
+22;
+222324 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+14
+A
+27;
+272829 *
+1 (	28:5B
+
+
+11
+30
+
+
+13
+31
+
+15
+151617
+
+19
+192017rù
+
+81518*
+1 (
+
+81921*
+1 (
+
+22825*
+1	 (
+
+22821*
+1 (
+
+22826*
+1 (
+
+222726*
+1 (

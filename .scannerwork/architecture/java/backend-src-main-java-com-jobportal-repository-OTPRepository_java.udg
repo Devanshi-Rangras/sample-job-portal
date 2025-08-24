@@ -1,0 +1,103 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853709281*java2.B©
+F
+Abackend/src/main/java/com/jobportal/repository/OTPRepository.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.repository7
++
+&com.jobportal.repository.OTPRepository9
+
+	interface10
+
+access11
+
+public12
+
+simple-name13
+
+OTPRepository14
+-
+'Recovered#typeBindingLMongoRepository;016
+
+unknown17
+
+
+implements18
+
+
+uses19
+
+com.jobportal.entity.OTP21
+p
+jcom.jobportal.repository.OTPRepository#findByCreationTimeBefore(Ljava/time/LocalDateTime;)Ljava/util/List;23
+
+method24
+
+findByCreationTimeBefore25J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576j¨
+;
+86
+8910 *
+1
+ 
+(:5B
+
+
+11
+12
+
+
+13
+14
+
+20
+202117
+
+15
+151617
+A
+22;
+222324 *
+1 (
+28:5B
+
+
+11
+12
+
+
+13
+25ri
+
+81518*
+1
+( 
+(7
+
+81519*
+1
+( 
+(7
+
+82019*
+1
+8 
+(;
+
+222019*
+1 (

@@ -1,0 +1,373 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853707826*java2.B“
+H
+Cbackend/src/main/java/com/jobportal/service/ProfileServiceImpl.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.service7
+-
+(com.jobportal.service.ProfileServiceImpl9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+ProfileServiceImpl14
+*
+$com.jobportal.service.ProfileService16
+
+unknown17
+
+
+implements18
+
+Service20
+
+annotated by21
+%
+Recovered#typeBindingLService;023
+
+
+uses24
+@
+:com.jobportal.service.ProfileServiceImpl.profileRepository26
+
+field27
+
+private28
+
+profileRepository29
+0
+*com.jobportal.repository.ProfileRepository31
+
+is type32
+
+	Autowired34
+'
+!Recovered#typeBindingLAutowired;036
+i
+ccom.jobportal.service.ProfileServiceImpl#createProfile(Lcom/jobportal/dto/UserDTO;)Ljava/lang/Long;38
+
+method39
+
+createProfile40
+
+com.jobportal.dto.UserDTO42
+
+	has param43
+0
+*com.jobportal.exception.JobPortalException45
+"
+com.jobportal.entity.Profile47
+
+calls48
+%
+com.jobportal.utility.Utilities50
+
+
+references51
+[
+Ucom.jobportal.utility.Utilities#getNextSequenceId(Ljava/lang/String;)Ljava/lang/Long;53
+i
+ccom.jobportal.service.ProfileServiceImpl#getProfile(Ljava/lang/Long;)Lcom/jobportal/dto/ProfileDTO;55
+
+
+getProfile56
+"
+com.jobportal.dto.ProfileDTO58
+
+returns59
+z
+tcom.jobportal.service.ProfileServiceImpl#updateProfile(Lcom/jobportal/dto/ProfileDTO;)Lcom/jobportal/dto/ProfileDTO;61
+
+updateProfile62
+K
+Ecom.jobportal.dto.ProfileDTO#toEntity()Lcom/jobportal/entity/Profile;64
+O
+Icom.jobportal.service.ProfileServiceImpl#getAllProfiles()Ljava/util/List;66
+
+getAllProfiles67J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jê
+A
+54;
+545539 *
+1# #(28:5B
+
+
+11
+12
+
+
+13
+56
+
+52
+525317
+
+22
+222317
+A
+37;
+373839 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+40
+A
+65;
+656639 *
+1/ /(28:5B
+
+
+11
+12
+
+
+13
+67
+
+19
+192017
+
+30
+303117
+;
+86
+8910 *
+1 ( :5B
+
+
+11
+12
+
+
+13
+14
+
+33
+333417
+
+49
+495017
+
+46
+464717
+A
+60;
+606139 *
+1( ((28:5B
+
+
+11
+12
+
+
+13
+62
+A
+25;
+252627 *
+1 (28:5B
+
+
+11
+28
+
+
+13
+29
+
+41
+414217
+
+35
+353617
+
+44
+444517
+
+63
+636417
+
+15
+151617
+
+57
+575817rå
+
+
+81518*
+1, (:
+
+81921*
+1 (
+
+82224*
+1 (	
+
+81524*
+1, (:
+
+253032*
+1
+ (
+
+253321*
+1 (
+
+253524*
+1 (
+
+253024*
+1
+ (
+
+253024*
+1 (-
+
+374143*
+1 (#
+
+374132*
+1$ (+
+
+374124*
+1 (#
+
+374424*
+14 (F
+
+374632*
+1 (
+
+374624*
+1 (
+
+
+374648*
+1 (
+
+374951*
+1 (
+
+375248*
+1 (,
+
+374924*
+1 (
+
+372551*
+1 (
+
+373024*
+1 (
+
+372551*
+1 (
+
+545759*
+1$	 $(
+
+545724*
+1$	 $(
+
+544424*
+1$/ $(A
+
+542551*
+1%
+ %(
+
+543024*
+1%
+ %(
+
+542551*
+1%
+ %(
+
+605759*
+1)	 )(
+
+605743*
+1)" )(,
+
+605724*
+1)	 )(
+
+605732*
+1)- )(7
+
+605724*
+1)" )(,
+
+604424*
+1)@ )(R
+
+602551*
+1* *(
+
+603024*
+1* *(
+
+602551*
+1* *(
+
+602551*
+1+ +(
+
+603024*
+1+ +(
+
+602551*
+1+ +(
+
+604659*
+1+ +($
+
+605751*
+1+ +($
+
+606348*
+1+% +(-
+
+655724*
+10 0(
+
+654424*
+102 0(D
+
+652551*
+11
+ 1(
+
+653024*
+11
+ 1(
+
+652551*
+11
+ 1(

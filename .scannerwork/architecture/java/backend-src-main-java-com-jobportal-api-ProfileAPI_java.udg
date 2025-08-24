@@ -1,0 +1,430 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853709157*java2.B„
+<
+7backend/src/main/java/com/jobportal/api/ProfileAPI.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.api7
+!
+com.jobportal.api.ProfileAPI9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+
+ProfileAPI14
+
+RestController16
+
+unknown17
+
+annotated by18
+,
+&Recovered#typeBindingLRestController;020
+
+
+uses21
+
+CrossOrigin23
+)
+#Recovered#typeBindingLCrossOrigin;025
+
+RequestMapping27
+,
+&Recovered#typeBindingLRequestMapping;029
+
+	Validated31
+'
+!Recovered#typeBindingLValidated;033
+1
++com.jobportal.api.ProfileAPI.profileService35
+
+field36
+
+private37
+
+profileService38
+*
+$com.jobportal.service.ProfileService40
+
+is type41
+
+	Autowired43
+'
+!Recovered#typeBindingLAutowired;045
+O
+Icom.jobportal.api.ProfileAPI#getProfile(Ljava/lang/Long;)LResponseEntity;47
+
+method48
+
+
+getProfile49
+
+ResponseEntity51
+
+returns52
+
+
+GetMapping54
+(
+"Recovered#typeBindingLGetMapping;056
+"
+com.jobportal.dto.ProfileDTO58
+
+PathVariable60
+*
+$Recovered#typeBindingLPathVariable;062
+0
+*com.jobportal.exception.JobPortalException64
+
+
+references65
+e
+_com.jobportal.service.ProfileService#getProfile(Ljava/lang/Long;)Lcom/jobportal/dto/ProfileDTO;67
+
+calls68
+C
+=com.jobportal.api.ProfileAPI#getAllProfiles()LResponseEntity;70
+
+getAllProfiles71
+K
+Ecom.jobportal.service.ProfileService#getAllProfiles()Ljava/util/List;73
+`
+Zcom.jobportal.api.ProfileAPI#updateProfile(Lcom/jobportal/dto/ProfileDTO;)LResponseEntity;75
+
+updateProfile76
+
+	has param77
+
+
+PutMapping79
+(
+"Recovered#typeBindingLPutMapping;081
+
+RequestBody83
+)
+#Recovered#typeBindingLRequestBody;085
+v
+pcom.jobportal.service.ProfileService#updateProfile(Lcom/jobportal/dto/ProfileDTO;)Lcom/jobportal/dto/ProfileDTO;87J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576j½
+
+19
+192017
+
+86
+868717
+
+15
+151617
+
+61
+616217
+A
+46;
+464748 *
+1 (28:5B
+
+
+11
+12
+
+
+13
+49
+
+66
+666717
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+
+26
+262717
+
+32
+323317
+
+42
+424317
+
+28
+282917
+A
+34;
+343536 *
+1 (28:5B
+
+
+11
+37
+
+
+13
+38
+
+63
+636417
+
+55
+555617
+
+39
+394017
+
+57
+575817
+
+82
+828317
+
+30
+303117
+A
+69;
+697048 *
+1" "(28:5B
+
+
+11
+12
+
+
+13
+71
+
+80
+808117
+
+24
+242517
+
+84
+848517
+
+50
+505117
+
+22
+222317
+
+53
+535417
+
+44
+444517
+
+78
+787917
+A
+74;
+747548 *
+1& &(28:5B
+
+
+11
+12
+
+
+13
+76
+
+72
+727317
+
+59
+596017rÅ
+
+81518*
+1 (
+
+81921*
+1 (
+
+82218*
+1 (
+
+82421*
+1 (
+
+82618*
+1 (
+
+82821*
+1 (
+
+83018*
+1 (
+
+83221*
+1 (
+
+343941*
+1
+ (
+
+344218*
+1 (
+
+344421*
+1 (
+
+343921*
+1
+ (
+
+343921*
+1 ('
+
+465052*
+1	 (
+
+465318*
+1 (
+
+465521*
+1 (
+
+465021*
+1	 (
+
+465721*
+1 ("
+
+465918*
+1. (/
+
+466121*
+1/ (;
+
+466321*
+1L (^
+
+465752*
+1   (-
+
+463965*
+1   (-
+
+466668*
+1 .  (8
+
+463465*
+1   (-
+
+463921*
+1   (-
+
+463465*
+1   (-
+
+695052*
+1#	 #(
+
+695318*
+1" "(
+
+695521*
+1" "(
+
+695021*
+1#	 #(
+
+695721*
+1# #('
+
+696321*
+1#A #(S
+
+693965*
+1$ $(-
+
+697268*
+1$. $(<
+
+693465*
+1$ $(-
+
+693921*
+1$ $(-
+
+693465*
+1$ $(-
+
+745052*
+1'	 '(
+
+745777*
+1'> '(H
+
+747818*
+1& &(
+
+748021*
+1& &(
+
+745021*
+1'	 '(
+
+745721*
+1' '("
+
+745741*
+1'I '(S
+
+748218*
+1'1 '(2
+
+748421*
+1'2 '(=
+
+745721*
+1'> '(H
+
+746321*
+1'\ '(n
+
+745752*
+1( ((-
+
+743965*
+1( ((-
+
+748668*
+1(. ((;
+
+743465*
+1( ((-
+
+743921*
+1( ((-
+
+743465*
+1( ((-

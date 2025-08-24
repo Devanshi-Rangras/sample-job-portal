@@ -1,0 +1,350 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853708187*java2.B²
+I
+Dbackend/src/main/java/com/jobportal/jwt/JwtAuthenticationFilter.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.jwt7
+.
+)com.jobportal.jwt.JwtAuthenticationFilter9
+
+class10
+
+access11
+
+public12
+
+simple-name13
+
+JwtAuthenticationFilter14
+2
+,Recovered#typeBindingLOncePerRequestFilter;016
+
+unknown17
+
+extends18
+
+	Component20
+
+annotated by21
+'
+!Recovered#typeBindingLComponent;023
+
+
+uses24
+9
+3com.jobportal.jwt.JwtAuthenticationFilter.jwtHelper26
+
+field27
+
+private28
+
+	jwtHelper29
+!
+com.jobportal.jwt.JwtHelper31
+
+is type32
+
+	Autowired34
+'
+!Recovered#typeBindingLAutowired;036
+B
+<com.jobportal.jwt.JwtAuthenticationFilter.userDetailsService38
+
+userDetailsService39
+
+UserDetailsService41
+y
+scom.jobportal.jwt.JwtAuthenticationFilter#doFilterInternal(LHttpServletRequest;LHttpServletResponse;LFilterChain;)V43
+
+method44
+
+	protected45
+
+doFilterInternal46
+0
+*Recovered#typeBindingLHttpServletRequest;048
+
+	has param49
+1
++Recovered#typeBindingLHttpServletResponse;051
+)
+#Recovered#typeBindingLFilterChain;053
+
+ServletException55
+
+
+references56
+\
+Vcom.jobportal.jwt.JwtHelper#getUsernameFromToken(Ljava/lang/String;)Ljava/lang/String;58
+
+calls59
+1
++Recovered#typeBindingLExpiredJwtException;061
+3
+-Recovered#typeBindingLMalformedJwtException;063
+)
+#Recovered#typeBindingLUserDetails;065
+h
+bcom.jobportal.jwt.JwtHelper#validateToken(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;67
+A
+;Recovered#typeBindingLUsernamePasswordAuthenticationToken;069J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jÚ
+A
+37;
+373827 *
+1 (28:5B
+
+
+11
+28
+
+
+13
+39
+
+22
+222317
+A
+25;
+252627 *
+1 (28:5B
+
+
+11
+28
+
+
+13
+29
+
+64
+646517
+
+30
+303117
+
+60
+606117
+
+62
+626317
+
+47
+474817
+
+57
+575817
+
+68
+686917
+
+66
+666717
+
+52
+525317
+
+54
+545517
+A
+42;
+424344 *
+1   (28:5B
+
+
+11
+45
+
+
+13
+46
+
+33
+333417
+;
+86
+8910 *
+1 (%:5B
+
+
+11
+12
+
+
+13
+14
+
+50
+505117
+
+35
+353617
+
+40
+404117
+
+15
+151617
+
+19
+192017r‡
+
+
+81518*
+1. (B
+
+81921*
+1 (
+
+82224*
+1 (
+
+81524*
+1. (B
+
+253032*
+1 (
+
+253321*
+1 (
+
+253524*
+1 (
+
+253024*
+1 (
+
+253024*
+1 ( 
+
+374032*
+1 (
+
+373321*
+1 (
+
+373524*
+1 (
+
+374024*
+1 (
+
+374024*
+1  (2
+
+424749*
+1!% !(7
+
+425049*
+1!A !(T
+
+425249*
+1!_ !(j
+
+424732*
+1!8 !(?
+
+424724*
+1!% !(7
+
+425032*
+1!U !(]
+
+425024*
+1!A !(T
+
+425232*
+1!k !(v
+
+425224*
+1!_ !(j
+
+425424*
+1! !(
+
+423056*
+14 4( 
+
+425759*
+14+ 4(?
+
+42824*
+14 4( 
+
+42856*
+14 4( 
+
+423024*
+14! 4(*
+
+422556*
+14! 4(*
+
+426032*
+19* 9(+
+
+426024*
+19 9()
+
+426232*
+1<, <(-
+
+426224*
+1< <(+
+
+426432*
+1O O($
+
+426424*
+1O O(
+
+42824*
+1O' O(+
+
+42856*
+1O' O(+
+
+424024*
+1O, O(>
+
+423756*
+1O, O(>
+
+423056*
+1P% P()
+
+426659*
+1P4 P(A
+
+42824*
+1P% P()
+
+42856*
+1P% P()
+
+423024*
+1P* P(3
+
+422556*
+1P* P(3
+
+426832*
+1T5 T(C
+
+426824*
+1T T(4

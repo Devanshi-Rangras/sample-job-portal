@@ -1,0 +1,134 @@
+
+1.0"Devanshi-Rangras_sample-job-portalJavaFrontend"1755853709355*java2.Bø
+;
+6backend/src/main/java/com/jobportal/dto/JobStatus.java2
+	
+type3
+	
+TEST4
+
+package6
+
+com.jobportal.dto7
+ 
+com.jobportal.dto.JobStatus9
+
+
+enum10
+
+access11
+
+public12
+
+simple-name13
+
+	JobStatus14
+H
+Bcom.jobportal.dto.JobStatus#values()[Lcom/jobportal/dto/JobStatus;16
+
+method17
+
+values18
+Z
+Tcom.jobportal.dto.JobStatus#valueOf(Ljava/lang/String;)Lcom/jobportal/dto/JobStatus;20
+
+valueOf21
+(
+"com.jobportal.dto.JobStatus.ACTIVE23
+
+field24
+
+ACTIVE25
+
+calls26
+(
+"com.jobportal.dto.JobStatus.CLOSED28
+
+CLOSED29
+'
+!com.jobportal.dto.JobStatus.DRAFT31
+
+DRAFT32J
+
+1
+12
+
+
+3
+4Z
+
+5	
+576jÐ
+5
+22/
+222324 *
+1 (28:5B
+
+
+13
+25
+5
+19/
+192017 *
+1 (28:5B
+
+
+13
+21
+5
+30/
+303124 *
+1 (28:5B
+
+
+13
+32
+5
+27/
+272824 *
+1
+ (28:5B
+
+
+13
+29
+;
+86
+8910 *
+1 (:5B
+
+
+11
+12
+
+
+13
+14
+5
+15/
+151617 *
+1 (28:5B
+
+
+13
+18rœ
+
+22826*
+1 (
+
+22826*
+1 (
+
+27826*
+1
+ (
+
+27826*
+1
+ (
+
+30826*
+1 (
+
+30826*
+1 (
