@@ -110,9 +110,8 @@ steps:
   # Build & Test Frontend (npm)
   - script: |
       cd frontend
-      set CI=true
       npm install
-      npm test -- --coverage --watchAll=false
+      set CI=true && npm test
     displayName: "Build & Test Frontend"
   
   # Check coverage file
