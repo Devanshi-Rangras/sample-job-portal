@@ -51,6 +51,10 @@ steps:
         sonar.junit.reportPaths=backend/target/surefire-reports
         sonar.coverage.jacoco.xmlReportPaths=backend/target/site/jacoco/jacoco.xml
         sonar.javascript.lcov.reportPaths=frontend/coverage/lcov.info
+
+        # Exclude node_modules and build outputs
+        sonar.exclusions=**/node_modules/**,**/dist/**,**/build/**
+        sonar.test.exclusions=**/*.test.js,**/*.spec.js
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
   
   # Setup Apache Maven
