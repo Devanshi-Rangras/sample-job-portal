@@ -46,6 +46,10 @@ steps:
       cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
       cliProjectName: 'JobPortal'
       cliSources: 'backend,frontend'
+      extraProperties: |
+        sonar.java.binaries=backend/target/classes
+        sonar.junit.reportPaths=backend/target/surefire-reports
+        sonar.coverage.jacoco.xmlReportPaths=backend/target/site/jacoco/jacoco.xml
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
   
   # Setup Apache Maven
@@ -73,7 +77,8 @@ steps:
 
   # Build & Test Backend with Maven
   - script: |
-      mvn -f backend/pom.xml clean verify
+      cd backend
+      mvn clean verify
     displayName: "Build & Test Backend (Maven)"
 
   # Build & Test Frontend (npm)
