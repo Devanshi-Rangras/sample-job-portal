@@ -94,8 +94,8 @@ steps:
   
   # Check coverage file
   - script: |
-      ls -lh frontend/coverage
-      cat frontend/coverage/lcov.info | head -n 20
+      dir frontend\coverage
+      type frontend\coverage\lcov.info
     displayName: "Check Coverage File"
   
   # Run SonarCloud Analysis
