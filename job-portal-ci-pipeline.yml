@@ -84,6 +84,29 @@ steps:
   - script: |
       mvn -f backend/pom.xml clean verify
     displayName: "Build & Test Backend (Maven)"
+  
+  # Check backend bytecode
+  - script: |
+      if exist backend\target (
+        echo "Backend target folder exists."
+
+        if exist backend\target\classes (
+          echo "Compiled classes found in backend\target\classes"
+          dir backend\target\classes
+        ) else (
+          echo "No compiled classes in backend\target\classes"
+        )
+
+        if exist backend\target\surefire-reports (
+          echo "Surefire test reports exist in backend\target\surefire-reports"
+          dir backend\target\surefire-reports
+        ) else (
+          echo "No test reports in backend\target\surefire-reports"
+        )
+      ) else (
+        echo "backend\target folder not found! Maybe Maven build did not run?"
+      )
+    displayName: "Check Backend Bytecode"
 
   # Build & Test Frontend (npm)
   - script: |
@@ -94,8 +117,19 @@ steps:
   
   # Check coverage file
   - script: |
-      dir frontend\coverage
-      type frontend\coverage\lcov.info
+      if exist frontend\coverage (
+        echo "Listing frontend/coverage folder..."
+        dir frontend\coverage
+
+        if exist frontend\coverage\lcov.info (
+          echo "Showing first 20 lines of lcov.info..."
+          powershell -Command "Get-Content frontend/coverage/lcov.info -TotalCount 20"
+        ) else (
+          echo "lcov.info not found!"
+        )
+      ) else (
+        echo "frontend\coverage folder not found!"
+      )
     displayName: "Check Coverage File"
   
   # Run SonarCloud Analysis
