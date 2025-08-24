@@ -81,7 +81,8 @@
       "!src/**/*.test.{js,jsx,ts,tsx}",
       "!src/setupTests.{js,ts}",
       "!src/**/index.{js,ts}"
-    ],
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
