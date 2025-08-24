@@ -45,11 +45,12 @@ steps:
       configMode: 'manual'
       cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
       cliProjectName: 'JobPortal'
-      cliSources: 'backend,frontend'
+      cliSources: 'backend/src,frontend/src'
       extraProperties: |
         sonar.java.binaries=backend/target/classes
         sonar.junit.reportPaths=backend/target/surefire-reports
         sonar.coverage.jacoco.xmlReportPaths=backend/target/site/jacoco/jacoco.xml
+        sonar.javascript.lcov.reportPaths=frontend/coverage/lcov.info
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
   
   # Setup Apache Maven
@@ -84,8 +85,7 @@ steps:
   - script: |
       cd frontend
       npm install
-      npm run build
-      npm test
+      npm test -- --coverage
     displayName: "Build & Test Frontend"
   
   # Run SonarCloud Analysis
