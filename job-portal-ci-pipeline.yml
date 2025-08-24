@@ -45,7 +45,7 @@ steps:
       configMode: 'manual'
       cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
       cliProjectName: 'JobPortal'
-      cliSources: 'backend/src,frontend/src'
+      cliSources: 'backend,frontend'
       extraProperties: |
         sonar.java.binaries=backend/target/classes
         sonar.junit.reportPaths=backend/target/surefire-reports
@@ -90,10 +90,10 @@ steps:
   
   # Run SonarCloud Analysis
   - task: SonarCloudAnalyze@3
-    displayName: "Run SonarCloud Analysis (Pre-Build)"
+    displayName: "Run SonarCloud Analysis"
   
   # Publish SonarCloud Quality Gate
   - task: SonarCloudPublish@3
     inputs:
       pollingTimeoutSec: '300'
-    displayName: "Publish SonarCloud Quality Gate (Pre-Build)"
+    displayName: "Publish SonarCloud Quality Gate"
