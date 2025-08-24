@@ -92,6 +92,12 @@ steps:
       npm test -- --coverage
     displayName: "Build & Test Frontend"
   
+  # Check coverage file
+  - script: |
+      ls -lh frontend/coverage
+      cat frontend/coverage/lcov.info | head -n 20
+    displayName: "Check Coverage File"
+  
   # Run SonarCloud Analysis
   - task: SonarCloudAnalyze@3
     displayName: "Run SonarCloud Analysis"
