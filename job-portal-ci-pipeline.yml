@@ -77,8 +77,7 @@ steps:
 
   # Build & Test Backend with Maven
   - script: |
-      cd backend
-      mvn clean verify
+      mvn -f backend/pom.xml clean verify
     displayName: "Build & Test Backend (Maven)"
 
   # Build & Test Frontend (npm)
