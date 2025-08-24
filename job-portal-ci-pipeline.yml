@@ -41,15 +41,9 @@ steps:
     inputs:
       SonarCloud: 'SonarCloudServiceConnection'   # <-- Service connection to your SonarCloud
       organization: 'devanshi-rangras'
-      scannerMode: 'CLI'
-      configMode: 'manual'
-      cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
-      cliProjectName: 'JobPortal'
-      cliSources: 'backend,frontend'
-      extraProperties: |
-        sonar.java.binaries=backend/target/classes
-        sonar.junit.reportPaths=backend/target/surefire-reports
-        sonar.coverage.jacoco.xmlReportPaths=backend/target/site/jacoco/jacoco.xml
+      scannerMode: 'Other'
+      projectKey: 'Devanshi-Rangras_sample-job-portal'
+      projectName: 'JobPortal'
     displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
   
   # Setup Apache Maven
@@ -77,7 +71,7 @@ steps:
 
   # Build & Test Backend with Maven
   - script: |
-      mvn -f backend/pom.xml clean verify
+      mvn -f backend/pom.xml clean verify sonar:sonar
     displayName: "Build & Test Backend (Maven)"
 
   # Build & Test Frontend (npm)
