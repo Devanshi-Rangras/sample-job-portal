@@ -41,7 +41,7 @@ steps:
     inputs:
       SonarCloud: 'SonarCloudServiceConnection'   # <-- Service connection to your SonarCloud
       organization: 'devanshi-rangras'
-      scannerMode: 'Other'
+      scannerMode: 'CLI'
       configMode: 'manual'
       cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
       cliProjectName: 'JobPortal'
