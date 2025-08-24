@@ -54,21 +54,7 @@
     "eject": "react-scripts eject"
   },
   "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "jsdom",
-    "transform": {
-      "^.+\\.(ts|tsx)$": "ts-jest"
-    },
-  "transformIgnorePatterns": [
-      "node_modules/(?!(axios)/)"
-    ],
-  "moduleNameMapper": {
-      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
-    },
-  "setupFilesAfterEnv": [
-      "<rootDir>/src/setupTests.ts"
-    ],
-  "collectCoverage": true,
+    "collectCoverage": true,
     "coverageDirectory": "coverage",
     "coverageReporters": ["lcov", "text", "html"],
     "coveragePathIgnorePatterns": [
@@ -76,7 +62,7 @@
       "/dist/",
       "/build/"
     ],
-  "collectCoverageFrom": [
+    "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/**/*.test.{js,jsx,ts,tsx}",
       "!src/setupTests.{js,ts}",
