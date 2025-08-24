@@ -37,24 +37,39 @@ steps:
     displayName: "Download & Setup JDK 21"
 
   # Prepare SonarCloud Analysis (CLI mode, before build)
+  # - task: SonarCloudPrepare@3
+  #   inputs:
+  #     SonarCloud: 'SonarCloudServiceConnection'   # <-- Service connection to your SonarCloud
+  #     organization: 'devanshi-rangras'
+  #     scannerMode: 'CLI'
+  #     configMode: 'manual'
+  #     cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
+  #     cliProjectName: 'JobPortal'
+  #     cliSources: 'backend,frontend'
+  #     extraProperties: |
+  #       sonar.java.binaries=backend/target/classes
+  #       sonar.junit.reportPaths=backend/target/surefire-reports
+  #       sonar.coverage.jacoco.xmlReportPaths=backend/target/site/jacoco/jacoco.xml
+  #       sonar.javascript.lcov.reportPaths=frontend/coverage/lcov.info
+
+  #       # Exclude node_modules and build outputs
+  #       sonar.exclusions=**/node_modules/**,**/dist/**,**/build/**
+  #   displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
+  
+  # Prepare SonarCloud Analysis (CLI mode, before build)
   - task: SonarCloudPrepare@3
     inputs:
-      SonarCloud: 'SonarCloudServiceConnection'   # <-- Service connection to your SonarCloud
+      SonarCloud: 'SonarCloudServiceConnection'
       organization: 'devanshi-rangras'
       scannerMode: 'CLI'
       configMode: 'manual'
       cliProjectKey: 'Devanshi-Rangras_sample-job-portal'
       cliProjectName: 'JobPortal'
-      cliSources: 'backend,frontend'
+      # Remove cliSources from here
       extraProperties: |
+        sonar.projectBaseDir=./
+        sonar.sources=backend,frontend
         sonar.java.binaries=backend/target/classes
-        sonar.junit.reportPaths=backend/target/surefire-reports
-        sonar.coverage.jacoco.xmlReportPaths=backend/target/site/jacoco/jacoco.xml
-        sonar.javascript.lcov.reportPaths=frontend/coverage/lcov.info
-
-        # Exclude node_modules and build outputs
-        sonar.exclusions=**/node_modules/**,**/dist/**,**/build/**
-    displayName: "Prepare SonarCloud Analysis (CLI Pre-Build)"
   
   # Setup Apache Maven
   - powershell: |
